@@ -73,7 +73,7 @@ cv.setMouseCallback('image', draw_shape)
 # Trackbar
 cv.createTrackbar('Dx','image',256,512,update)      # -256 -> 256
 cv.createTrackbar('Dy','image',256,512,update)      # -256 -> 256
-cv.createTrackbar('Angle','image',0,180,update)   # -180 -> 180
+cv.createTrackbar('Angle','image',0,180,update)   # 0 -> 180
 cv.createTrackbar('ScaleX','image',100,300,update)  # 0 -> 3.0
 cv.createTrackbar('ScaleY','image',100,300,update)  # 0 -> 3.0
 
@@ -88,3 +88,4 @@ while True:
         break
 
 cv.destroyAllWindows()
+
